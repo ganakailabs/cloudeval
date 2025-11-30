@@ -8,7 +8,7 @@ Direct cloud account import is currently in development. Cloudeval currently wor
 
 ## Current Status
 
-cloudeval currently supports:
+Cloudeval currently supports:
 
 ![Infrastructure as Code](../assets/images/features/infra-as-code.png)
 

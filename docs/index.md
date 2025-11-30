@@ -6,7 +6,7 @@ Welcome to Cloudeval, the AI-powered cloud infrastructure visualization platform
 
 ## What is Cloudeval?
 
-cloudeval is an AI-powered cloud diagramming tool designed for DevOps engineers, SREs, and cloud architects. It automatically visualizes your Azure infrastructure from ARM templates and Bicep files, generates interactive diagrams, and provides AI-powered insights through natural language chat.
+Cloudeval is an AI-powered cloud diagramming tool designed for DevOps engineers, SREs, and cloud architects. It automatically visualizes your Azure infrastructure from ARM templates and Bicep files, generates interactive diagrams, and provides AI-powered insights through natural language chat.
 
 ### Core Capabilities
 

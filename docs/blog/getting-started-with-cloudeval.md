@@ -10,7 +10,7 @@ Welcome to Cloudeval! If you're new to cloud evaluation and assessment, this gui
 
 ## What is Cloudeval?
 
-cloudeval is a comprehensive platform for evaluating and assessing cloud infrastructure. It helps you:
+Cloudeval is a comprehensive platform for evaluating and assessing cloud infrastructure. It helps you:
 
 - Identify configuration issues before deployment
 - Ensure compliance with best practices

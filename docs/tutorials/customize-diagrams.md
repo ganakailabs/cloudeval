@@ -102,7 +102,7 @@ Control resource node sizes:
 
 ### Automatic Grouping
 
-cloudeval automatically groups:
+Cloudeval automatically groups:
 
 - Resources by resource group
 - Related resources by type

@@ -136,7 +136,7 @@ Click on any resource node to see:
 
 ## Step 6: Edit Your Infrastructure
 
-cloudeval includes a web-based editor for your Infrastructure as Code:
+Cloudeval includes a web-based editor for your Infrastructure as Code:
 
 <video controls style="min-width: 600px; max-width: 100%; height: auto; display: block; margin: 1.5rem auto;">
   <source src="../assets/videos/web-editor.webm" type="video/webm">

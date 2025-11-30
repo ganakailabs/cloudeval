@@ -2,7 +2,7 @@
 
 **Work with Your Team on Infrastructure Diagrams**
 
-cloudeval enables real-time collaboration so your team can work together on infrastructure diagrams, share insights, and maintain up-to-date documentation.
+Cloudeval enables real-time collaboration so your team can work together on infrastructure diagrams, share insights, and maintain up-to-date documentation.
 
 <video controls style="min-width: 600px; max-width: 100%; height: auto; display: block; margin: 1.5rem auto;">
   <source src="../assets/videos/collaboration.webm" type="video/webm">

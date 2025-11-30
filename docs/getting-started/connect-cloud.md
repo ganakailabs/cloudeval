@@ -8,7 +8,7 @@ Use the [Playground](https://cloudeval.ai/playground) to explore features, or up
 
 ## Current Status
 
-cloudeval currently supports:
+Cloudeval currently supports:
 
 - **Infrastructure as Code** - Upload ARM templates and Bicep files
 - **Web Editor** - Edit your IaC files directly in the browser

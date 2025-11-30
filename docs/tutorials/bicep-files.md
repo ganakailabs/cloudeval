@@ -68,7 +68,7 @@ az bicep decompile --file template.json --out main.bicep
 
 ## Step 3: Understand the Parsed Bicep
 
-cloudeval automatically:
+Cloudeval automatically:
 
 1. **Parses Bicep** - Validates syntax and structure
 2. **Identifies Resources** - Finds all resource declarations
@@ -98,7 +98,7 @@ Click on any resource to see:
 
 ### Understand Dependencies
 
-cloudeval shows:
+Cloudeval shows:
 - **Direct Dependencies** - Resources this depends on
 - **Dependents** - Resources that depend on this
 - **Module Dependencies** - Module relationships
@@ -136,7 +136,7 @@ module vmModule 'modules/vm.bicep' = {
 }
 ```
 
-cloudeval visualizes:
+Cloudeval visualizes:
 - Module relationships
 - Parameter flow
 - Output dependencies
@@ -197,7 +197,7 @@ Ask questions about your Bicep file:
 
 ### Check for Issues
 
-cloudeval identifies:
+Cloudeval identifies:
 - Missing required parameters
 - Invalid resource references
 - Circular dependencies
@@ -254,7 +254,7 @@ module storage 'modules/storage.bicep' = {
 
 ### Diagram Generated
 
-cloudeval automatically shows:
+Cloudeval automatically shows:
 - Module hierarchy
 - Parameter flow between modules
 - Output dependencies

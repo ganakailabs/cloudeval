@@ -6,11 +6,11 @@
 
 ### What is Cloudeval?
 
-cloudeval is an AI-powered cloud infrastructure visualization platform that automatically generates architecture diagrams from your Infrastructure as Code (ARM templates and Bicep files), answers questions about your infrastructure, and helps optimize costs.
+Cloudeval is an AI-powered cloud infrastructure visualization platform that automatically generates architecture diagrams from your Infrastructure as Code (ARM templates and Bicep files), answers questions about your infrastructure, and helps optimize costs.
 
 ### How does Cloudeval work?
 
-cloudeval works with your Infrastructure as Code files:
+Cloudeval works with your Infrastructure as Code files:
 
 1. Upload your ARM template or Bicep file
 2. Cloudeval parses and analyzes the code
@@ -94,7 +94,7 @@ The [Playground](https://cloudeval.ai/playground) is an interactive demo where y
 
 ### What ARM template features are supported?
 
-cloudeval supports:
+Cloudeval supports:
 
 - Resource definitions
 - Parameters and variables
@@ -106,7 +106,7 @@ cloudeval supports:
 
 ### What Bicep features are supported?
 
-cloudeval supports:
+Cloudeval supports:
 
 - Resource declarations
 - Parameters and variables
@@ -264,7 +264,7 @@ No. The AI can only read and analyze. It cannot make changes to your code or inf
 
 ### What's the maximum template size?
 
-cloudeval can handle:
+Cloudeval can handle:
 
 - **Free tier:** Up to 1,000 resources per template
 - **Pro tier:** Up to 10,000 resources per template
