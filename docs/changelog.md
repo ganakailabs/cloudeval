@@ -73,4 +73,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-**View detailed release notes:** [Releases](https://github.com/ganakailabs/cloudeval-docs/releases)
+**View detailed release notes:** [Releases](https://github.com/ganakailabs/cloudeval/releases)

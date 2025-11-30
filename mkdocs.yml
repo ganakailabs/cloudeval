@@ -1,10 +1,10 @@
 site_name: Cloudeval Docs
 site_description: Cloudeval Documentation
-site_author: cloudeval Team
+site_author: PrateekKumarSingh
 site_url: https://docs.cloudeval.ai/
 
-repo_name: ganakailabs/cloudeval-docs
-repo_url: https://github.com/ganakailabs/cloudeval-docs
+repo_name: ganakailabs/cloudeval
+repo_url: https://github.com/ganakailabs/cloudeval
 edit_uri: edit/main/docs/
 
 
@@ -21,14 +21,14 @@ theme:
     # Dark mode (default)
     - scheme: slate
       primary: black
-      accent: dark-green
+      accent: green
       toggle:
         icon: material/brightness-7
         name: Switch to light mode
     # Light mode
     - scheme: default
       primary: black
-      accent: dark-green
+      accent: green
       toggle:
         icon: material/brightness-4
         name: Switch to dark mode
@@ -83,7 +83,7 @@ plugins:
     enable_creation_date: true
     fallback_to_build_date: true
 - git-committers:
-    repository: ganakailabs/cloudeval-docs
+    repository: ganakailabs/cloudeval
     branch: main
 - search
 
@@ -113,7 +113,7 @@ nav:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/ganakailabs/cloudeval-docs
+      link: https://github.com/ganakailabs/cloudeval
   local:
     social_preview: https://repository-images.githubusercontent.com/184154668/58818c00-d496-11eb-9b77-016145022654
 

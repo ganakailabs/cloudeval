@@ -111,7 +111,7 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/ganakailabs/cloudeval-blog
 
-copyright: Copyright &copy; 2025 cloudeval Team
+copyright: Copyright &copy; 2025 Cloudeval Team
 EOF
 
 # Create index.md

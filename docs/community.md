@@ -26,7 +26,7 @@ Participate in:
 - Documentation improvements
 - Q&A
 
-**[GitHub Discussions →](https://github.com/ganakailabs/cloudeval-docs/discussions)**
+**[GitHub Discussions →](https://github.com/ganakailabs/cloudeval/discussions)**
 
 ## Contribute
 
@@ -43,7 +43,7 @@ Found an error or have a suggestion?
 
 Found a bug?
 
-1. [Open an issue](https://github.com/ganakailabs/cloudeval-docs/issues)
+1. [Open an issue](https://github.com/ganakailabs/cloudeval/issues)
 2. Describe the problem
 3. Include steps to reproduce
 4. Add screenshots if helpful
@@ -52,7 +52,7 @@ Found a bug?
 
 Have an idea?
 
-1. [Start a discussion](https://github.com/ganakailabs/cloudeval-docs/discussions)
+1. [Start a discussion](https://github.com/ganakailabs/cloudeval/discussions)
 2. Describe your use case
 3. Explain the benefit
 4. Get community feedback

@@ -142,7 +142,7 @@ When contributing, please:
 
 If you need help contributing:
 
-- [Open an issue](https://github.com/ganakailabs/cloudeval-docs/issues)
+- [Open an issue](https://github.com/ganakailabs/cloudeval/issues)
 - [Join Discord](community.md#discord-server)
 - [Email us](mailto:support@ganak.ai)
 

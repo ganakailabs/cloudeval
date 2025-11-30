@@ -116,7 +116,7 @@ Enterprise customers get:
 
 Found a bug?
 
-1. [Open an issue](https://github.com/ganakailabs/cloudeval-docs/issues)
+1. [Open an issue](https://github.com/ganakailabs/cloudeval/issues)
 2. Use the bug report template
 3. Include:
    - Steps to reproduce
@@ -129,7 +129,7 @@ Found a bug?
 
 Have an idea?
 
-1. [Start a discussion](https://github.com/ganakailabs/cloudeval-docs/discussions)
+1. [Start a discussion](https://github.com/ganakailabs/cloudeval/discussions)
 2. Describe the feature
 3. Explain the use case
 4. Get community feedback
