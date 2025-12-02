@@ -90,10 +90,12 @@ plugins:
 nav:
   - Home: index.md
   - Getting started:
+    - getting-started/index.md
     - Overview: getting-started/overview.md
     - First Diagram: getting-started/first-diagram.md
     - AI Chat: getting-started/ai-chat.md
   - Features:
+    - features/index.md
     - Export & Share: features/export.md
     - Collaboration: features/collaboration.md
     - Web IaC Editor: features/web-editor.md
