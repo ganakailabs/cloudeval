@@ -66,7 +66,7 @@ cloudeval chat
 - `--conversation <id>` - Resume a specific conversation/thread
 - `--model <name>` - Specify the AI model to use
 - `--debug` - Enable debug logging (shows raw chunks)
-- `--no-health-check` - Skip backend health check
+- `--health-check` - Enable backend health check (disabled by default)
 - `--no-banner` - Disable ASCII banner
 - `--no-anim` - Disable loader animations
 
