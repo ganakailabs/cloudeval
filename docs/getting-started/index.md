@@ -11,6 +11,7 @@ New to Cloudeval? Start here:
 1. **[Overview](overview.md)** - Complete getting started guide
 2. **[First Diagram](first-diagram.md)** - Create your first diagram
 3. **[AI Chat](ai-chat.md)** - Learn to use the AI assistant
+4. **[CLI](cli.md)** - Command-line interface for terminal users
 
 ## Guides
 
@@ -48,6 +49,17 @@ Learn to use Cloudeval's AI-powered chat assistant:
 
 **[Start Using AI Chat →](ai-chat.md)**
 
+### [CLI](cli.md)
+
+Use Cloudeval from your terminal:
+
+- Install the CLI
+- Authenticate and chat
+- Integrate with CI/CD
+- Automate workflows
+
+**[Get Started with CLI →](cli.md)**
+
 ## What's Next?
 
 After getting started, explore:
@@ -59,4 +71,5 @@ After getting started, explore:
 ---
 
 **Need help?** [Contact support](../../support.md) or [join our community](../../community.md)
+
 

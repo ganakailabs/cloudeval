@@ -46,6 +46,7 @@ Get up and running in minutes:
 2. **[Sign up](https://cloudeval.ai/signup)** for a free account
 3. **[Upload your ARM template](getting-started/overview.md)** - Generate your first diagram
 4. **[Start chatting](getting-started/ai-chat.md)** with your infrastructure
+5. **[Use the CLI](getting-started/cli.md)** - Chat from your terminal
 
 ## Key Value Propositions
 
@@ -68,6 +69,7 @@ Always up-to-date diagrams that reflect your actual infrastructure code, elimina
 ## Popular Guides
 
 - **[Getting Started Guide](getting-started/overview.md)** - From sign-up to first diagram
+- **[CLI Documentation](getting-started/cli.md)** - Use Cloudeval from the terminal
 - **[Work with ARM Templates](tutorials/arm-templates.md)** - ARM template visualization
 - **[AI Chat Tutorial](tutorials/ai-chat-basics.md)** - Master the AI assistant
 - **[Export Diagrams](features/export.md)** - Share your diagrams

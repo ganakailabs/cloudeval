@@ -292,3 +292,4 @@ echo "5. Wait for DNS propagation (1-4 hours)"
 echo ""
 echo "📁 Blog repository location: $BLOG_DIR"
 
+

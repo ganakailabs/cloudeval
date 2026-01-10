@@ -15,3 +15,4 @@ Place your documentation assets here.
 
 Note: If logo.png or favicon.png are not present, the site will work without them, but the logo/favicon won't be displayed.
 
+
