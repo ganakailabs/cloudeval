@@ -1,9 +1,9 @@
 # Cloud Import
 
 !!! warning "Coming Soon"
-    Direct cloud account import is coming in **March 2026** (Azure) and **Early July 2026** (AWS) as part of our cloud sync features.
+    Direct cloud account import is listed on the roadmap as part of the Azure and AWS cloud sync feature areas.
 
-    Cloudeval currently works with Infrastructure as Code files (ARM templates). For cloud sync features, [view our roadmap](https://cloudeval.ai/home/roadmap).
+    Cloudeval currently works with Infrastructure as Code files, starting with ARM templates. For cloud sync features, [view our roadmap](https://cloudeval.ai/home/roadmap).
 
     **[Join our waitlist](https://cloudeval.ai/waitlist)** to be notified when this feature launches.
 
@@ -13,7 +13,7 @@ Cloudeval currently supports:
 
 ![Infrastructure as Code](../assets/images/features/infra-as-code.png)
 
-- **Infrastructure as Code** - Upload ARM templates and Bicep files
+- **Infrastructure as Code** - Upload ARM templates
 - **Web Editor** - Edit your IaC files directly in the browser
 - **AI Analysis** - Get insights about your infrastructure code
 - **Diagram Generation** - Visualize your infrastructure from code
@@ -79,14 +79,14 @@ az group export --name my-resource-group --output-file template.json
 **From Bicep:**
 
 ```bash
-# Use Bicep files directly, or compile to ARM
+# Compile Bicep to ARM before uploading
 az bicep build --file main.bicep
 ```
 
 ### Step 2: Upload to Cloudeval
 
 1. Create a new project
-2. Upload your ARM template or Bicep file
+2. Upload your ARM template
 3. Cloudeval parses and generates diagram
 4. Edit and analyze your infrastructure
 

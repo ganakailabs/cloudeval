@@ -239,7 +239,7 @@ Export via API for automation:
 
 ```bash
 curl -X POST https://api.cloudeval.ai/v1/projects/PROJECT_ID/export \
-  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Authorization: Bearer ${CLOUDEVAL_API_TOKEN}" \
   -H "Content-Type: application/json" \
   -d '{
     "format": "png",

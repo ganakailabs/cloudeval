@@ -21,7 +21,7 @@ Use Cloudeval to create visual documentation and interactive guides that help ne
 
 ### Step 1: Prepare Infrastructure Documentation
 
-1. **Upload ARM template or Bicep file** to Cloudeval
+1. **Upload an ARM template** to Cloudeval
 2. **Generate diagram** - Automatic visualization of infrastructure
 3. **Review and customize** - Adjust layout for clarity
 4. **Add annotations** - Highlight important components
@@ -247,4 +247,3 @@ Use Cloudeval to create visual documentation and interactive guides that help ne
 ---
 
 **Ready to onboard your team?** [Try Cloudeval now](https://cloudeval.ai/signup)
-

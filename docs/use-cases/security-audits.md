@@ -21,7 +21,7 @@ Cloudeval helps security teams and DevOps engineers quickly visualize and audit 
 
 ### Step 1: Upload Infrastructure as Code
 
-1. **Upload ARM template or Bicep file** to Cloudeval
+1. **Upload an ARM template** to Cloudeval
 2. **Review parsed resources** - Ensure all resources are detected
 3. **Verify template structure** - Check for parsing errors
 
@@ -228,4 +228,3 @@ Integrate Cloudeval security analysis into CI/CD:
 ---
 
 **Ready to audit your infrastructure?** [Try Cloudeval now](https://cloudeval.ai/signup)
-

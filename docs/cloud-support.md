@@ -1,14 +1,12 @@
 # Cloud Support & Roadmap
 
-**Current Cloud Support and Future Plans**
-
-CloudEval currently supports Azure ARM Templates with plans to expand to additional Infrastructure as Code formats and cloud providers. [View our full roadmap](https://cloudeval.ai/home/roadmap) for detailed timelines and features.
+Use this page to understand what Cloudeval supports today and what is planned next. Cloudeval currently supports Azure ARM templates, with additional Infrastructure as Code formats and cloud provider sync listed on the [roadmap](https://cloudeval.ai/home/roadmap).
 
 ## Currently Supported (Core Platform)
 
 ### Azure ARM Templates
 
-**Available Now (December 2025):**
+**Available now:**
 
 - **ARM Templates** (JSON) - Complete support
 - **Modular Templates** - Linked templates
@@ -36,9 +34,7 @@ CloudEval currently supports Azure ARM Templates with plans to expand to additio
 
 ### Full Infrastructure as Code (IaC) Support
 
-**Timeline: Early February 2026**
-
-From code to visualization & smart overlay insights: cost, security, well-architected
+This roadmap area covers additional IaC formats and smarter overlay insights for cost, security, and well-architected reviews.
 
 **Planned Support:**
 
@@ -50,9 +46,7 @@ From code to visualization & smart overlay insights: cost, security, well-archit
 
 ### Deeper AI Understanding & Cloud Insight
 
-**Timeline: Mid February 2026**
-
-Deeper context, smarter analysis, unified access.
+This roadmap area covers deeper context, smarter analysis, and unified access.
 
 **Planned Features:**
 
@@ -64,8 +58,6 @@ Deeper context, smarter analysis, unified access.
 [View roadmap](https://cloudeval.ai/home/roadmap) for more details.
 
 ### Azure Cloud Sync v1
-
-**Timeline: March 2026**
 
 Connect your cloud environment to the platform.
 
@@ -81,8 +73,6 @@ Connect your cloud environment to the platform.
 
 ### GitHub Integration
 
-**Timeline: Early May 2026**
-
 Sync your GitHub repositories to the platform.
 
 **Planned Features:**
@@ -94,8 +84,6 @@ Sync your GitHub repositories to the platform.
 [View roadmap](https://cloudeval.ai/home/roadmap) for more details.
 
 ### AWS Cloud Sync v1
-
-**Timeline: Early July 2026**
 
 Connect your AWS cloud environment to the platform.
 
@@ -121,13 +109,13 @@ Connect your AWS cloud environment to the platform.
 
 ### Coming Soon
 
-- Terraform support (Early Feb 2026)
-- Azure Bicep support (Early Feb 2026)
-- AWS CloudFormation support (Early Feb 2026)
-- Advanced AI understanding (Mid Feb 2026)
-- Azure Cloud Sync (March 2026)
-- GitHub Integration (Early May 2026)
-- AWS Cloud Sync (Early July 2026)
+- Terraform support
+- Azure Bicep support
+- AWS CloudFormation support
+- Advanced AI understanding
+- Azure Cloud Sync
+- GitHub Integration
+- AWS Cloud Sync
 
 [View full roadmap](https://cloudeval.ai/home/roadmap) for complete timeline and details.
 
@@ -155,26 +143,26 @@ Have a cloud provider or feature you'd like to see?
 
 - **[Newsletter](https://cloudeval.ai/newsletter)** - Monthly updates
 - **[Changelog](changelog.md)** - Feature releases
-- **[Blog](blog/)** - Product updates
+- **[Blog](blog/index.md)** - Product updates
 - **[Roadmap](https://cloudeval.ai/home/roadmap)** - Latest roadmap updates
 
 ## FAQ
 
 ### When will Terraform support be available?
 
-Terraform support is planned for **Early February 2026** as part of our "Full Infrastructure as Code Support" release. [View roadmap](https://cloudeval.ai/home/roadmap) for details.
+Terraform support is planned as part of the "Full Infrastructure as Code Support" roadmap area. [View roadmap](https://cloudeval.ai/home/roadmap) for current timing.
 
 ### Will you support Azure Bicep?
 
-Yes, Azure Bicep support is planned for **Early February 2026** as part of our "Full Infrastructure as Code Support" release. [View roadmap](https://cloudeval.ai/home/roadmap) for details.
+Yes, Azure Bicep support is planned as part of the "Full Infrastructure as Code Support" roadmap area. [View roadmap](https://cloudeval.ai/home/roadmap) for current timing.
 
 ### Will you support AWS?
 
-Yes, AWS CloudFormation support is planned for **Early February 2026**, and AWS Cloud Sync is planned for **Early July 2026**. [View roadmap](https://cloudeval.ai/home/roadmap) for details.
+Yes, AWS CloudFormation support and AWS Cloud Sync are planned roadmap items. [View roadmap](https://cloudeval.ai/home/roadmap) for current timing.
 
 ### When will direct cloud connection be available?
 
-Azure Cloud Sync is planned for **March 2026**. AWS Cloud Sync is planned for **Early July 2026**. [View roadmap](https://cloudeval.ai/home/roadmap) for details.
+Azure Cloud Sync and AWS Cloud Sync are planned roadmap items. [View roadmap](https://cloudeval.ai/home/roadmap) for current timing.
 
 ### Will direct cloud connection be free?
 
@@ -186,7 +174,7 @@ Open a [GitHub issue](https://github.com/ganakailabs/cloudeval/issues) or [conta
 
 ## Next Steps
 
-- **[Getting Started](getting-started/overview.md)** - Start using CloudEval
+- **[Getting Started](getting-started/overview.md)** - Start using Cloudeval
 - **[ARM Templates Tutorial](tutorials/arm-templates.md)** - Learn ARM template features
 - **[View Roadmap](https://cloudeval.ai/home/roadmap)** - See what's coming
 - **[Changelog](changelog.md)** - See what's new

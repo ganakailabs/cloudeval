@@ -1,7 +1,7 @@
 # Security Analysis
 
 !!! warning "Coming Soon"
-Advanced security analysis with detailed vulnerability scanning and compliance checks is coming in **Mid February 2026** as part of our "Deeper AI Understanding & Cloud Insight" release.
+Advanced security analysis with detailed vulnerability scanning and compliance checks is listed on the roadmap as part of the "Deeper AI Understanding & Cloud Insight" release area.
 
     Currently, Cloudeval provides **interactive visualizations with security overlays** as part of the core platform. For advanced security analysis features, [view our roadmap](https://cloudeval.ai/home/roadmap).
 
@@ -28,7 +28,7 @@ Security Analysis automatically reviews your Infrastructure as Code for:
 
 When you upload or edit your Infrastructure as Code:
 
-1. **Parse & Analyze** - Cloudeval parses your ARM template or Bicep file
+1. **Parse & Analyze** - Cloudeval parses your ARM template
 2. **Security Checks** - Runs automated security checks against best practices
 3. **Issue Detection** - Identifies potential vulnerabilities and misconfigurations
 4. **Risk Assessment** - Categorizes issues by severity (Critical, High, Medium, Low)
@@ -232,7 +232,7 @@ Integrate security checks:
 
 ### Current Limitations
 
-- **Azure Only** - Currently supports Azure ARM templates and Bicep
+- **Azure Only** - Currently documented for Azure Infrastructure as Code
 - **Static Analysis** - Analyzes code, not running infrastructure
 - **Best Practices** - Based on common security standards
 - **False Positives** - Some warnings may be intentional

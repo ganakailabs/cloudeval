@@ -1,8 +1,6 @@
 # Cloudeval CLI
 
-**Command-line interface for Cloudeval - Chat with your infrastructure from the terminal**
-
-The Cloudeval CLI provides a powerful terminal-based interface to interact with your cloud infrastructure using AI chat. Perfect for developers who prefer working in the terminal, CI/CD pipelines, and automation workflows.
+The Cloudeval CLI lets you authenticate, select a project, and ask Eva questions from your terminal. Use it for local workflows, scripts, and CI/CD jobs where a browser-based chat is too slow or hard to automate.
 
 ## Quick Start
 
@@ -14,7 +12,7 @@ The Cloudeval CLI provides a powerful terminal-based interface to interact with 
 curl -fsSL https://raw.githubusercontent.com/ganakailabs/cloudeval-cli/main/scripts/install.sh | bash
 ```
 
-This installs the `cloudeval` and `eva` commands globally.
+This installs the `cloudeval` command globally.
 
 **Verify installation:**
 
@@ -61,9 +59,13 @@ cloudeval chat
 
 **Options:**
 
-- `--base-url <url>` - Backend base URL (default: `http://localhost:8000` or `CLOUDEVAL_BASE_URL` env var)
-- `--api-key <key>` - API key for authentication (alternative to login)
+- `--base-url <url>` - Backend base URL (default: `https://cloudeval.ai/api/proxy/v1`, or `CLOUDEVAL_BASE_URL` when set)
+- `--api-key <key>` - API key for machine workflows
+- `--api-key-stdin` - Read API key from stdin for safer automation
+- `--machine` - Allow machine credential fallback
 - `--conversation <id>` - Resume a specific conversation/thread
+- `--continue` - Resume the most recent local chat session
+- `--resume <id-or-title>` - Resume a local chat session by thread ID or title
 - `--model <name>` - Specify the AI model to use
 - `--debug` - Enable debug logging (shows raw chunks)
 - `--health-check` - Enable backend health check (disabled by default)
@@ -76,8 +78,8 @@ cloudeval chat
 # Chat with default settings
 cloudeval chat
 
-# Chat with custom backend
-cloudeval chat --base-url https://api.cloudeval.ai
+# Chat with a custom backend
+cloudeval chat --base-url http://localhost:8000/api/v1
 
 # Resume a previous conversation
 cloudeval chat --conversation abc123
@@ -101,12 +103,19 @@ cloudeval ask "What resources are in my infrastructure?"
 
 **Options:**
 
-- `--base-url <url>` - Backend base URL (default: `http://localhost:8000` or `CLOUDEVAL_BASE_URL` env var)
-- `--api-key <key>` - API key for authentication (alternative to login)
+- `--base-url <url>` - Backend base URL (default: `https://cloudeval.ai/api/proxy/v1`, or `CLOUDEVAL_BASE_URL` when set)
+- `--api-key <key>` - API key for machine workflows
+- `--api-key-stdin` - Read API key from stdin for safer automation
+- `--machine` - Allow machine credential fallback
 - `--project <id>` - Project ID to use (default: auto-selects Playground project)
 - `--model <name>` - Specify the AI model to use
+- `--thread <id>` - Reuse a specific thread ID
 - `--output <file>` - Write response to file (default: stdout)
-- `--json` - Output as JSON with question, response, threadId, and project info
+- `--format <format>` - Output format: `text`, `json`, `ndjson`, or `markdown`
+- `--json` - Output as JSON
+- `--progress <mode>` - Progress events: `auto`, `stderr`, `ndjson`, or `none`
+- `--quiet` - Suppress progress and warning messages
+- `--open` / `--print-url` / `--no-open` - Control frontend chat-thread links
 - `--debug` - Enable debug logging (shows raw chunks)
 
 **Examples:**
@@ -119,7 +128,7 @@ cloudeval ask "How many virtual machines are in my infrastructure?"
 cloudeval ask "Generate a cost report" --output response.txt
 
 # Output as JSON
-cloudeval ask "What resources are in my infrastructure?" --json
+cloudeval ask "What resources are in my infrastructure?" --format json
 
 # Use specific project
 cloudeval ask "What's the architecture?" --project abc123
@@ -219,9 +228,9 @@ You can configure the CLI using environment variables:
 
 ```bash
 # Backend URL
-export CLOUDEVAL_BASE_URL="https://api.cloudeval.ai"
+export CLOUDEVAL_BASE_URL="https://cloudeval.ai/api/proxy/v1"
 
-# API Key (alternative to login)
+# API key for machine workflows
 export CLOUDEVAL_API_KEY="your-api-key"
 
 # Backend authentication (for custom deployments)
@@ -273,10 +282,10 @@ For CI/CD or automation:
 export CLOUDEVAL_API_KEY="your-api-key"
 
 # Interactive chat
-cloudeval chat --base-url https://api.cloudeval.ai
+cloudeval chat
 
 # Non-interactive (better for automation)
-cloudeval ask "What resources are in my infrastructure?" --base-url https://api.cloudeval.ai
+cloudeval ask "What resources are in my infrastructure?"
 ```
 
 ### Resuming Conversations
@@ -288,6 +297,9 @@ cloudeval chat
 # Note the conversation ID from the UI
 # Resume it later:
 cloudeval chat --conversation abc123def456
+
+# Or continue the most recent local session
+cloudeval chat --continue
 ```
 
 ### Custom Backend
@@ -323,7 +335,7 @@ cloudeval login
 
 **Solutions:**
 - Check if backend is running: `curl http://localhost:8000/api/v1/chat/health`
-- Use `--no-health-check` to skip health check
+- Use `--health-check` only when you want the CLI to run the backend health check before chat
 - Verify `CLOUDEVAL_BASE_URL` is correct
 
 ### Project Selection Issues
@@ -394,8 +406,8 @@ jobs:
       
       - name: Ask Question (Non-Interactive)
         run: |
-          cloudeval ask "${{ inputs.question }}" \
-            --api-key "${{ secrets.CLOUDEVAL_API_KEY }}" \
+          printf '%s' "${{ secrets.CLOUDEVAL_API_KEY }}" | cloudeval ask "${{ inputs.question }}" \
+            --api-key-stdin \
             --output response.txt
       
       - name: Upload Response
@@ -409,15 +421,15 @@ jobs:
 
 - **[AI Chat Tutorial](../tutorials/ai-chat-basics.md)** - Learn advanced chat features
 - **[Getting Started Overview](overview.md)** - Complete platform guide
-- **[Features](../../features/)** - Explore all Cloudeval capabilities
+- **[Features](../features/index.md)** - Explore all Cloudeval capabilities
 
 ## Support
 
 Need help with the CLI?
 
-- **[FAQ](../../faq.md)** - Common questions and answers
+- **[FAQ](../faq.md)** - Common questions and answers
 - **[GitHub Issues](https://github.com/ganakailabs/cloudeval-cli/issues)** - Report bugs
-- **[Discord](https://discord.gg/tk5dcU2a7T)** - Community support
+- **[Discord](https://discord.com/channels/1442249998052884542/1442250002549313660)** - Community support
 
 ---
 

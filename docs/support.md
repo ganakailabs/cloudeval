@@ -1,165 +1,104 @@
 # Support
 
-**Get Help When You Need It**
+Use this page when you need help with account access, template parsing, diagram generation, exports, collaboration, or security concerns.
 
-## Contact Support
+## Contact Options
 
 ### Email Support
 
 - **Support:** [support@ganak.ai](mailto:support@ganak.ai)
 
-**Response Time:**
+Expected response times:
 
-- Free tier: Within 48 hours
-- Pro tier: Within 24 hours
-- Enterprise: Within 4 hours (SLA)
+- **Free tier:** Within 48 hours
+- **Pro tier:** Within 24 hours
+- **Enterprise:** Within 4 hours when covered by SLA
 
 ### In-App Support
 
-1. Click **Help** → **Contact Support**
-2. Describe your issue
-3. Attach screenshots if helpful
-4. Submit ticket
+1. Click **Help** -> **Contact Support**.
+2. Describe the issue.
+3. Attach screenshots or error messages if helpful.
+4. Submit the ticket.
 
-## Self-Service Resources
+### Community Help
 
-### Documentation
+- **[Community page](community.md)** - Discord, contribution paths, and feedback channels.
+- **[Discord](community.md#discord-server)** - Real-time help.
+- **[Discord direct link](https://discord.com/channels/1442249998052884542/1442250002549313660)** - Community support.
+- **[GitHub Discussions](community.md#github-discussions)** - Q&A and feature discussions.
 
-- **[Getting Started](getting-started/overview.md)** - Start here
-- **[FAQ](faq.md)** - Common questions
-- **[Tutorials](tutorials/)** - Step-by-step guides
-- **[Feature Guides](features/)** - Deep dives
+## Before You Contact Support
 
-### Community
+To get a faster answer, include:
 
-- **[Discord](community.md#discord-server)** - Real-time help
-- **[GitHub Discussions](community.md#github-discussions)** - Q&A
-- **[Discord](https://discord.gg/tk5dcU2a7T)** - Community support
+- The page or feature where the issue happened.
+- The exact error message.
+- Steps to reproduce the issue.
+- Screenshots, if the issue is visual.
+- Browser and operating system.
+- Template size and file type, if the issue involves parsing or diagrams.
 
-### Video Resources
+Check these first:
 
-- **[Discord](https://discord.gg/tk5dcU2a7T)** - Get help and watch tutorials
-
-## Support Tiers
-
-### Free Tier
-
-- Community support (Discord, GitHub)
-- Email support (48-hour response)
-- Documentation access
-- Video tutorials
-
-### Pro Tier
-
-- Priority email support (24-hour response)
-- All free tier benefits
-- Direct access to support team
-- Feature request priority
-
-### Enterprise Tier
-
-- Dedicated support manager
-- 4-hour response SLA
-- Phone support
-- Custom training
-- Onboarding assistance
-
-## Before Contacting Support
-
-To help us help you faster:
-
-1. **Check Documentation** - Your answer might be in the docs
-2. **Search FAQ** - Common issues are covered
-3. **Check Community** - Others may have asked the same question
-4. **Gather Information:**
-   - Error messages
-   - Steps to reproduce
-   - Screenshots
-   - Browser/OS information
+- **[Getting Started](getting-started/overview.md)** - Setup and first project.
+- **[FAQ](faq.md)** - Common troubleshooting.
+- **[Tutorials](tutorials/index.md)** - Step-by-step guides.
+- **[Feature Guides](features/index.md)** - Feature-specific docs.
 
 ## Common Support Topics
 
-### Account Issues
+### Account and Billing
 
 - Password reset
-- Billing questions
-- Subscription changes
+- Subscription questions
 - Account deletion
+- Billing support
 
 ### Technical Issues
 
-- Connection problems
-- Diagram generation errors
+- Template parsing errors
+- Diagram generation failures
 - Export failures
 - Performance issues
+- Browser compatibility
 
-### Feature Questions
+### Product Questions
 
-- How to use features
+- Feature availability
 - Best practices
-- Workarounds
-- Feature requests
-
-## Enterprise Support
-
-Enterprise customers get:
-
-- **Dedicated Support Manager** - Single point of contact
-- **SLA Guarantees** - Response time commitments
-- **Priority Escalation** - Fast-track critical issues
-- **Custom Training** - Team onboarding
-- **Architecture Reviews** - Best practice guidance
-
-**[Contact Support](mailto:support@ganak.ai)** for enterprise support options.
+- Roadmap and provider support
+- Enterprise onboarding
 
 ## Bug Reports
 
-Found a bug?
+For product bugs:
 
-1. [Open an issue](https://github.com/ganakailabs/cloudeval/issues)
-2. Use the bug report template
-3. Include:
-   - Steps to reproduce
-   - Expected behavior
-   - Actual behavior
-   - Screenshots/logs
-   - Environment details
+1. [Open an issue](https://github.com/ganakailabs/cloudeval/issues).
+2. Include steps to reproduce.
+3. Include expected and actual behavior.
+4. Attach screenshots, logs, or sample templates when safe.
 
 ## Feature Requests
 
-Have an idea?
+For feature ideas:
 
-1. [Start a discussion](https://github.com/ganakailabs/cloudeval/discussions)
-2. Describe the feature
-3. Explain the use case
-4. Get community feedback
+1. [Start a discussion](https://github.com/ganakailabs/cloudeval/discussions).
+2. Describe the use case.
+3. Explain who benefits.
+4. Add examples or workflow details.
 
 ## Security Issues
 
-**Important:** For security vulnerabilities, email [support@ganak.ai](mailto:support@ganak.ai) directly. Do not post publicly.
+**Important:** For security vulnerabilities, email [support@ganak.ai](mailto:support@ganak.ai) directly. Do not post security issues publicly.
 
-We follow responsible disclosure and will:
+We will:
 
-- Acknowledge receipt within 24 hours
-- Investigate promptly
-- Provide updates on progress
-- Credit you (if desired) when fixed
+- Acknowledge receipt within 24 hours.
+- Investigate promptly.
+- Provide updates on progress.
+- Credit you, if desired, when the issue is fixed.
 
-## Status Page
+## Status Updates
 
-Check system status:
-
-- Check [Discord](https://discord.gg/tk5dcU2a7T) for service status updates
-- Service health
-- Incident history
-- Maintenance schedules
-
-## Feedback
-
-We love feedback! Share your thoughts:
-
-- **Support:** [support@ganak.ai](mailto:support@ganak.ai)
-
----
-
-**Need immediate help?** [Join our Discord](community.md#discord-server) for real-time support!
+Check [Discord](https://discord.com/channels/1442249998052884542/1442250002549313660) for service status updates, incident notes, and maintenance announcements.

@@ -1,323 +1,176 @@
 # Tutorial: Use the AI Assistant to Explain Your Infrastructure
 
-**Master Cloudeval's AI Chat for Instant Infrastructure Insights**
+This tutorial helps you get useful answers from Cloudeval's AI chat assistant after you upload an Infrastructure as Code file and generate a diagram.
 
-This tutorial teaches you how to effectively use Cloudeval's AI chat assistant to understand, analyze, and optimize your cloud infrastructure.
+## What You Will Learn
 
-## Getting Started with AI Chat
+By the end, you will know how to:
 
-### Opening the Chat
+- Ask discovery questions about resources in a template.
+- Use follow-up questions without repeating context.
+- Ask architecture, security, cost, and deployment-order questions.
+- Use chat answers alongside the diagram instead of treating them as a replacement for review.
 
-**Methods:**
+## Prerequisites
 
-1. Click the **chat icon** (bottom right)
-2. Press **Ctrl+K** (Cmd+K on Mac)
-3. Use command: `/chat` in search
+- A Cloudeval project with a generated diagram
+- An uploaded Azure ARM template
+- Basic familiarity with the resources in your template
 
-### Your First Question
+## Open Chat
 
-Start simple:
+1. Open your project.
+2. Click the **chat icon** in the bottom-right corner.
+3. Or press `Ctrl+K` (`Cmd+K` on macOS).
+4. Type a question and press `Enter`.
 
-```
-What resources do I have?
-```
+## Ask Discovery Questions
 
-The AI will:
+Start by asking what exists:
 
-- List your resources
-- Group by type
-- Show counts
-- Highlight in diagram
-
-## Question Types
-
-### Discovery Questions
-
-Learn what you have:
-
-```
-"Show me all my EC2 instances"
+```text
+What resources are in this template?
 ```
 
-```
-"List all S3 buckets"
-```
-
-```
-"What databases are in my account?"
+```text
+List all storage accounts
 ```
 
-```
-"Show me all resources in us-east-1"
-```
-
-### Analysis Questions
-
-Understand your infrastructure:
-
-```
-"Explain the network topology"
+```text
+Show all virtual networks and subnets
 ```
 
-```
-"What's the relationship between these resources?"
-```
-
-```
-"How does data flow through this architecture?"
+```text
+What parameters are required for deployment?
 ```
 
-```
-"What are the dependencies for this application?"
-```
+Good discovery questions are narrow enough that the assistant can return a concrete list.
 
-### Security Questions
+## Ask Architecture Questions
 
-Find security issues:
+After you know what exists, ask how the pieces relate:
 
-```
-"Find all publicly accessible resources"
+```text
+Explain the network topology
 ```
 
-```
-"Show me resources without encryption"
-```
-
-```
-"Which security groups allow port 22 from 0.0.0.0/0?"
+```text
+What resources depend on this virtual network?
 ```
 
-```
-"Identify compliance violations"
-```
-
-### Cost Questions
-
-Optimize spending:
-
-```
-"What's my current AWS spending?"
+```text
+What is the deployment order?
 ```
 
-```
-"Find underutilized resources"
-```
-
-```
-"Show me the most expensive resources"
+```text
+Which resources are connected to this database?
 ```
 
-```
-"Recommend cost optimizations"
-```
+When possible, select a resource in the diagram first, then ask a question such as:
 
-### Troubleshooting Questions
-
-Debug issues:
-
-```
-"Why can't I access this resource?"
+```text
+What is connected to this?
 ```
 
-```
-"Find resources with errors"
-```
+## Ask Security Questions
 
-```
-"What changed in the last hour?"
-```
+Use security questions to find configurations that deserve human review:
 
-```
-"Show me all resources in this VPC"
+```text
+Find publicly accessible resources
 ```
 
-## Advanced Techniques
-
-### Context-Aware Questions
-
-The AI understands your current view:
-
-1. **Select a resource** in the diagram
-2. Ask: `"What's connected to this?"`
-3. AI uses selected resource as context
-
-### Follow-up Questions
-
-Build on previous answers:
-
-```
-You: "Show me all databases"
-AI: [Lists databases]
-
-You: "Which ones are encrypted?"
-AI: [Filters to encrypted databases]
-
-You: "What's the cost of the unencrypted ones?"
-AI: [Shows cost analysis]
+```text
+Show resources without encryption settings
 ```
 
-### Diagram Interaction
-
-The AI can modify the diagram:
-
-```
-"Highlight all public resources"
+```text
+Which resources are missing ownership tags?
 ```
 
-```
-"Zoom to the VPC"
-```
-
-```
-"Show only EC2 instances"
+```text
+What should I review before deploying this template to production?
 ```
 
-```
-"Group resources by environment tag"
-```
+!!! note
+    Treat security answers as review assistance. Verify critical findings against the template and your organization's security standards.
 
-## Real-World Scenarios
+## Ask Cost and Operations Questions
 
-### Scenario 1: Security Audit
+Use these questions during planning or review:
 
-**Goal:** Find all security issues
-
-```
-You: "Perform a security audit"
-
-AI: I found 5 security issues:
-    1. S3 bucket 'public-data' is publicly accessible
-    2. Security group 'sg-web' allows SSH from 0.0.0.0/0
-    3. RDS database 'prod-db' has encryption disabled
-    4. IAM role 'lambda-role' has overly permissive policy
-    5. EC2 instance 'web-01' has no security group
-
-    Would you like me to highlight these in the diagram?
-
-You: "Yes, and show recommendations"
-
-AI: [Highlights issues and shows fix recommendations]
+```text
+Which resources are likely to drive cost?
 ```
 
-### Scenario 2: Cost Optimization
-
-**Goal:** Reduce cloud spending
-
-```
-You: "What's my current monthly AWS cost?"
-
-AI: Your current monthly AWS spending is $3,450:
-    - EC2 instances: $1,800 (52%)
-    - RDS databases: $1,200 (35%)
-    - S3 storage: $300 (9%)
-    - Other: $150 (4%)
-
-You: "Find ways to reduce costs"
-
-AI: I found 3 optimization opportunities:
-    1. 5 EC2 instances running at <10% CPU - save $400/month
-    2. RDS database can be downsized - save $200/month
-    3. 3 S3 buckets with no lifecycle policy - save $50/month
-
-    Total potential savings: $650/month (19%)
-
-You: "Show me the underutilized instances"
-
-AI: [Highlights underutilized instances with details]
+```text
+Find resources that look over-provisioned
 ```
 
-### Scenario 3: Architecture Understanding
-
-**Goal:** Understand complex architecture
-
-```
-You: "Explain this infrastructure"
-
-AI: This is a 3-tier web application:
-
-    Tier 1 - Web Layer:
-    - 3 EC2 instances behind Application Load Balancer
-    - Auto Scaling Group (2-5 instances)
-    - Public subnets in 2 AZs
-
-    Tier 2 - Application Layer:
-    - 2 EC2 instances in private subnets
-    - Auto Scaling Group (2-4 instances)
-    - Connected to web tier via security groups
-
-    Tier 3 - Data Layer:
-    - RDS Multi-AZ database
-    - ElastiCache cluster
-    - S3 buckets for storage
-
-    Network:
-    - VPC with public/private subnets
-    - NAT Gateway for outbound internet
-    - Internet Gateway for inbound traffic
-
-You: "Show me the data flow"
-
-AI: [Highlights data flow paths with arrows]
+```text
+What operational risks should I check?
 ```
 
-## Pro Tips
-
-### Be Specific
-
-**Bad:** "Tell me about my infrastructure"  
-**Good:** "Show me all EC2 instances in production"
-
-### Use Natural Language
-
-You don't need special syntax:
-
-- "Find resources without tags"
-- "What's the cost of my databases?"
-- "Show me the network flow"
-
-### Combine Questions
-
-Ask multiple things:
-
-```
-"Show me all public resources and their costs"
+```text
+What monitoring or diagnostic settings are defined?
 ```
 
-### Use Filters
+## Use Follow-Up Questions
 
-Narrow down scope:
+The assistant keeps conversation context. You can ask a sequence like this:
 
+```text
+Show me all databases
 ```
-"Find EC2 instances in us-east-1 with tag Environment=Production"
+
+```text
+Which ones have public network access?
+```
+
+```text
+Highlight the risky ones in the diagram
+```
+
+Follow-ups work best when each question narrows the previous answer.
+
+## Improve Weak Answers
+
+If the answer is too broad, rephrase with a resource type, environment, or expected output:
+
+**Too broad:**
+
+```text
+Tell me about my infrastructure
+```
+
+**Better:**
+
+```text
+Summarize the network resources and call out anything publicly reachable
+```
+
+**Better:**
+
+```text
+List storage accounts, their access settings, and any tags used for ownership
 ```
 
 ## Keyboard Shortcuts
 
-- **Ctrl+K** / **Cmd+K:** Open chat
-- **Esc:** Close chat
-- **Enter:** Send message
-- **Shift+Enter:** New line
-- **↑:** Previous message
-- **↓:** Next message
-- **Tab:** Autocomplete
+- `Ctrl+K` / `Cmd+K` - Open chat
+- `Esc` - Close chat
+- `Enter` - Send message
+- `Shift+Enter` - New line
+- `↑` - Previous message
+- `↓` - Next message
+- `Tab` - Autocomplete, when available
 
-## Limitations
+## Limits
 
-The AI chat:
-
-- Can read and analyze your infrastructure
-- Can provide insights and recommendations
-- Can highlight and filter resources
-- Cannot modify your infrastructure
-- Cannot access your data
-- Cannot make changes to resources
+The AI chat can read and analyze your project context, but it cannot deploy infrastructure, modify cloud resources, or replace production review. Use it to move faster, then verify important decisions in the source template and deployment process.
 
 ## Next Steps
 
-- **[Customize Diagrams](customize-diagrams.md)** - Perfect your diagrams
-- **[Export Diagrams](../features/export.md)** - Share your work
-- **[Collaborate](../features/collaboration.md)** - Work with your team
-
----
-
-**Ready to master AI chat?** Try asking questions about your infrastructure now!
+- **[Customize Diagrams](customize-diagrams.md)** - Prepare focused views.
+- **[Export Diagrams](../features/export.md)** - Share answers and diagrams.
+- **[Collaborate](../features/collaboration.md)** - Review with your team.

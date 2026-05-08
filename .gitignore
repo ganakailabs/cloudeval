@@ -27,6 +27,24 @@ wheels/
 .installed.cfg
 *.egg
 
+# Local configuration and credentials. Keep examples public, never real values.
+.env
+.env.*
+!.env.example
+*.local
+*.pem
+*.key
+*.p8
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.secret
+*.secret.*
+*.token
+*.token.*
+secrets/
+
 # IDE
 .vscode/
 .idea/
@@ -37,5 +55,4 @@ wheels/
 # OS
 .DS_Store
 Thumbs.db
-
 

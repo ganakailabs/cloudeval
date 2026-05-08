@@ -6,13 +6,13 @@
 
 ### What is Cloudeval?
 
-Cloudeval is an AI-powered cloud infrastructure visualization platform that automatically generates architecture diagrams from your Infrastructure as Code (ARM templates and Bicep files), answers questions about your infrastructure, and helps optimize costs.
+Cloudeval is an AI-powered cloud infrastructure visualization platform that generates architecture diagrams from Infrastructure as Code, starting with Azure ARM templates. It answers questions about your infrastructure and helps teams review cost, security, and architecture concerns.
 
 ### How does Cloudeval work?
 
 Cloudeval works with your Infrastructure as Code files:
 
-1. Upload your ARM template or Bicep file
+1. Upload your ARM template
 2. Cloudeval parses and analyzes the code
 3. Maps resources and dependencies
 4. Generates interactive diagrams
@@ -38,20 +38,20 @@ Yes. Cloudeval:
 
 **Coming Soon:**
 
-- Azure Bicep files - Early Feb 2026 ([View roadmap](https://cloudeval.ai/home/roadmap))
-- Terraform - Early Feb 2026 ([View roadmap](https://cloudeval.ai/home/roadmap))
-- AWS CloudFormation - Early Feb 2026 ([View roadmap](https://cloudeval.ai/home/roadmap))
+- Azure Bicep files - Planned ([View roadmap](https://cloudeval.ai/home/roadmap))
+- Terraform - Planned ([View roadmap](https://cloudeval.ai/home/roadmap))
+- AWS CloudFormation - Planned ([View roadmap](https://cloudeval.ai/home/roadmap))
 
 ### Can I connect my Azure account directly?
 
 !!! warning "Coming Soon"
-Direct Azure account connection is coming in **March 2026** as part of our "Azure Cloud Sync v1" release. [View roadmap](https://cloudeval.ai/home/roadmap) for details.
+Direct Azure account connection is listed on the roadmap as part of the "Azure Cloud Sync v1" release area. [View roadmap](https://cloudeval.ai/home/roadmap) for current timing.
 
     Cloudeval currently works with Infrastructure as Code files (ARM templates). **[Join our waitlist](https://cloudeval.ai/waitlist)** to be notified when this feature launches.
 
 For now, you can:
 
-- Upload ARM templates or Bicep files
+- Upload ARM templates
 - Export templates from Azure and upload them
 - Use the [Playground](https://cloudeval.ai/playground) to explore features
 
@@ -65,7 +65,7 @@ No. Cloudeval is a web-based application. Just sign up and use it in your browse
 
 1. **[Try the Playground](https://cloudeval.ai/playground)** - Explore features without signing up
 2. **[Sign up](https://cloudeval.ai/signup)** for a free account
-3. **[Upload your ARM template or Bicep file](getting-started/overview.md)**
+3. **[Upload your ARM template](getting-started/overview.md)**
 4. Generate your first diagram
 
 ### What is the Playground?
@@ -89,7 +89,7 @@ The [Playground](https://cloudeval.ai/playground) is an interactive demo where y
 ### How do I upload my Bicep file?
 
 !!! info "Coming Soon"
-Bicep file support is coming in **Early February 2026** as part of our "Full Infrastructure as Code Support" release. [View roadmap](https://cloudeval.ai/home/roadmap) for details.
+Bicep file support is listed on the roadmap. [View roadmap](https://cloudeval.ai/home/roadmap) for current timing.
 
     Currently, you can upload ARM templates (JSON). Bicep support will be available soon.
 
@@ -109,7 +109,7 @@ Cloudeval supports:
 
 ### What Bicep features are supported?
 
-Cloudeval supports:
+Bicep support is listed on the roadmap. When native support is available, the planned workflow covers:
 
 - Resource declarations
 - Parameters and variables
@@ -139,9 +139,9 @@ For ARM templates:
 
 For Bicep:
 
-- Upload all module files
-- Cloudeval shows module hierarchy
-- Visualize module dependencies
+- Compile Bicep to ARM before upload, or use the native Bicep workflow when support is available
+- Keep module files together
+- Validate module references before upload
 
 ## Diagrams & Visualization
 
@@ -234,13 +234,13 @@ No. The AI can only read and analyze. It cannot make changes to your code or inf
 1. **Verify file format:**
 
    - ARM templates must be valid JSON
-   - Bicep files must be valid Bicep syntax
+   - If you start from Bicep, compile or validate it with Azure CLI before upload
    - Check file encoding (UTF-8)
 
 2. **Check for syntax errors:**
 
    - Validate JSON syntax (use JSON validator)
-   - Validate Bicep syntax (use `az bicep build`)
+   - Validate Bicep syntax before compiling to ARM (use `az bicep build`)
    - Look for missing commas, brackets, quotes
 
 3. **Validate with Azure CLI:**

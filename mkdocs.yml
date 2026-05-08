@@ -89,21 +89,46 @@ plugins:
 
 nav:
   - Home: index.md
+  - About: about.md
   - Getting started:
     - getting-started/index.md
     - Overview: getting-started/overview.md
     - First Diagram: getting-started/first-diagram.md
     - AI Chat: getting-started/ai-chat.md
+    - CLI: getting-started/cli.md
+    - Connect cloud provider: getting-started/connect-cloud.md
   - Features:
     - features/index.md
     - Export & Share: features/export.md
     - Collaboration: features/collaboration.md
     - Web IaC Editor: features/web-editor.md
+    - Cloud Import: features/cloud-import.md
+    - Security Analysis: features/security-analysis.md
+    - Cost Optimization: features/cost-optimization.md
   - Tutorials:
+    - tutorials/index.md
     - ARM Templates: tutorials/arm-templates.md
     - AI Chat Basics: tutorials/ai-chat-basics.md
     - Customize Diagrams: tutorials/customize-diagrams.md
-  # - Cloud Support: cloud-support.md
+    - Bicep Files: tutorials/bicep-files.md
+  - Use cases:
+    - use-cases/index.md
+    - Architecture Planning: use-cases/architecture-planning.md
+    - Code Reviews: use-cases/code-reviews.md
+    - CI/CD Integration: use-cases/cicd-integration.md
+    - Infrastructure Onboarding: use-cases/infrastructure-onboarding.md
+    - Security Audits: use-cases/security-audits.md
+    - Cost Optimization Review: use-cases/cost-optimization-review.md
+  - Resources:
+    - Cloud Support & Roadmap: cloud-support.md
+    - Diagram Gallery: gallery.md
+    - Community: community.md
+    - Support: support.md
+    - Contribute: contribute.md
+    - Blog:
+      - blog/index.md
+      - Getting Started with Cloudeval: blog/getting-started-with-cloudeval.md
+      - Updates: blog/updates.md
   - FAQ: faq.md
   - Changelog: changelog.md
 
@@ -113,4 +138,3 @@ extra:
       link: https://github.com/ganakailabs/cloudeval
 
 copyright: Copyright &copy; 2025 Cloudeval Team
-

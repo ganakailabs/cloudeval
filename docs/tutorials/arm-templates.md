@@ -252,11 +252,11 @@ Cloudeval automatically shows:
 
 ## Next Steps
 
-- **[Work with Bicep Files](bicep-files.md)** - Visualize Bicep infrastructure
+- **[Prepare Bicep Files](bicep-files.md)** - Compile Bicep to ARM for the current workflow
 - **[Customize Diagrams](customize-diagrams.md)** - Adjust layouts
 - **[Export Diagrams](../features/export.md)** - Share with team
 - **[Use AI Chat](ai-chat-basics.md)** - Get insights
 
 ---
 
-**Ready for more?** Check out other [tutorials](../index.md) or [feature guides](../features/)
+**Ready for more?** Check out other [tutorials](index.md) or [feature guides](../features/index.md)

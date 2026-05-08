@@ -1,105 +1,84 @@
 # Community & Feedback
 
-**Join the Cloudeval Community**
+Use the community channels when you want help from other users, want to report product feedback publicly, or want to contribute improvements to Cloudeval docs.
 
-Connect with other Cloudeval users, share tips, get help, and contribute to making Cloudeval better.
-
-## Join Our Community
+## Community Channels
 
 ### Discord Server
 
-Join our Discord for:
+Use Discord for:
 
 - Real-time help and support
 - Feature discussions
-- Tips and tricks
+- Tips and workflow ideas
 - User showcases
 
-**[Join Discord →](https://discord.gg/tk5dcU2a7T)**
+**[Join Discord ->](https://discord.com/channels/1442249998052884542/1442250002549313660)**
 
 ### GitHub Discussions
 
-Participate in:
+Use GitHub Discussions for:
 
+- Product questions
 - Feature requests
-- Bug reports
-- Documentation improvements
-- Q&A
+- Documentation ideas
+- Longer Q&A threads
 
-**[GitHub Discussions →](https://github.com/ganakailabs/cloudeval/discussions)**
+**[GitHub Discussions ->](https://github.com/ganakailabs/cloudeval/discussions)**
 
 ## Contribute
 
 ### Suggest Documentation Improvements
 
-Found an error or have a suggestion?
-
-1. Click **"Suggest an Edit"** on any page
-2. Make your changes
-3. Submit a pull request
-4. We'll review and merge
+1. Click **Suggest an Edit** on any page.
+2. Make your changes.
+3. Submit a pull request.
+4. The team reviews and merges accepted changes.
 
 ### Report Bugs
 
-Found a bug?
-
-1. [Open an issue](https://github.com/ganakailabs/cloudeval/issues)
-2. Describe the problem
-3. Include steps to reproduce
-4. Add screenshots if helpful
+1. [Open an issue](https://github.com/ganakailabs/cloudeval/issues).
+2. Describe the problem.
+3. Include steps to reproduce.
+4. Add screenshots or logs if helpful.
 
 ### Request Features
 
-Have an idea?
+1. [Start a discussion](https://github.com/ganakailabs/cloudeval/discussions).
+2. Describe your use case.
+3. Explain the benefit.
+4. Add examples of the workflow you want to improve.
 
-1. [Start a discussion](https://github.com/ganakailabs/cloudeval/discussions)
-2. Describe your use case
-3. Explain the benefit
-4. Get community feedback
+## Share Your Work
 
-## User Showcase
-
-### Share Your Diagrams
-
-We love seeing what you build! Share your diagrams:
-
-- **Discord:** Post in #showcase channel on [our Discord server](https://discord.gg/tk5dcU2a7T)
+If you build a useful diagram or workflow, share it in the showcase channel on [Discord](https://discord.com/channels/1442249998052884542/1442250002549313660).
 
 ## Events & Webinars {#events--webinars}
 
-Join our [Discord server](https://discord.gg/tk5dcU2a7T) for:
+Join [Discord](https://discord.com/channels/1442249998052884542/1442250002549313660) for:
 
-- **Monthly Office Hours** - First Tuesday of each month
-- **Feature Releases** - Live demos of new features
-- **User Meetups** - Regional gatherings
-- **Webinar Recordings** - Access past sessions
+- Monthly office hours
+- Feature-release demos
+- User meetups
+- Webinar recordings
 
 ## Resources
 
-### Documentation
-
 - **[Getting Started](getting-started/overview.md)**
-- **[Tutorials](tutorials/)**
-- **[Feature Guides](features/)**
+- **[Tutorials](tutorials/index.md)**
+- **[Feature Guides](features/index.md)**
 - **[FAQ](faq.md)**
-
-### Video Tutorials
-
-- Join our [Discord server](https://discord.gg/tk5dcU2a7T) for video tutorials and tips
+- **[Support](support.md)**
 
 ## Code of Conduct
 
-We're committed to providing a welcoming and inclusive community. We expect all community members to:
+We expect community members to:
 
-- Be respectful and inclusive
-- Provide constructive feedback
-- Help others learn and grow
-- Follow community guidelines
+- Be respectful and inclusive.
+- Provide constructive feedback.
+- Help others learn and grow.
+- Follow community guidelines.
 
 ## Contact
 
 - **Support:** [support@ganak.ai](mailto:support@ganak.ai)
-
----
-
-**Join us and help shape the future of cloud visualization!**

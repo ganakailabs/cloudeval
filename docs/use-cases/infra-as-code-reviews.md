@@ -1,8 +1,11 @@
 # Code Reviews
 
+!!! note "Canonical page"
+    This page is a legacy duplicate of [Code Reviews](code-reviews.md). Keep it available for existing links, but use [Code Reviews](code-reviews.md) for navigation and future edits.
+
 **Visualize Infrastructure as Code Changes Before Merging**
 
-Use Cloudeval to review ARM template and Bicep file changes in pull requests, understand the impact of changes, and catch issues before they reach production.
+Use Cloudeval to review ARM template changes in pull requests, understand the impact of changes, and catch issues before they reach production.
 
 ## Use Case Overview
 
@@ -22,7 +25,7 @@ Use Cloudeval to review ARM template and Bicep file changes in pull requests, un
 ### Step 1: Review Pull Request
 
 1. **Open pull request** with Infrastructure as Code changes
-2. **Identify changed files** - ARM templates, Bicep files
+2. **Identify changed files** - ARM templates, or planned Bicep files when support is available
 3. **Download changed files** or access via PR integration
 4. **Upload to Cloudeval** - Create temporary project for review
 
@@ -262,4 +265,3 @@ Bad: "This is wrong."
 ---
 
 **Ready to improve your code reviews?** [Try Cloudeval now](https://cloudeval.ai/signup)
-

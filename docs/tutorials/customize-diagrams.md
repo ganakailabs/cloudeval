@@ -8,7 +8,7 @@ This tutorial shows you how to customize Cloudeval diagrams to match your prefer
 
 ### Automatic Layout (Default)
 
-cloudeval's AI automatically positions resources for optimal readability:
+Cloudeval's AI automatically positions resources for optimal readability:
 
 - **Intelligent Grouping** - Related resources grouped together
 - **Optimal Spacing** - Resources positioned for clarity

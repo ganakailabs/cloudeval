@@ -6,136 +6,82 @@
 
 ## Introduction
 
-Welcome to Cloudeval! If you're new to cloud evaluation and assessment, this guide will help you get started on the right foot. We'll walk you through the basics of setting up Cloudeval and running your first evaluation.
+Cloudeval helps teams turn Infrastructure as Code into diagrams that are easier to inspect, explain, and share. If you are new to the product, start with a sample project in the playground, then upload an Azure ARM template when you are ready to work with your own infrastructure.
 
-## What is Cloudeval?
+## What Cloudeval Helps With
 
-Cloudeval is a comprehensive platform for evaluating and assessing cloud infrastructure. It helps you:
+Cloudeval is designed for infrastructure review workflows:
 
-- Identify configuration issues before deployment
-- Ensure compliance with best practices
-- Optimize costs and resource utilization
-- Maintain security standards across your cloud environment
+- Generate architecture diagrams from ARM templates.
+- Inspect resources, parameters, variables, and dependencies visually.
+- Ask AI chat questions about the current project.
+- Edit Infrastructure as Code in the browser.
+- Export diagrams for reviews, documentation, and onboarding.
 
 ## Prerequisites
 
 Before you begin, make sure you have:
 
-- Access to your cloud environment (Azure, AWS, or GCP)
-- Appropriate permissions to read resource configurations
-- Basic understanding of cloud infrastructure concepts
+- A modern browser.
+- An Azure ARM template (`.json`) if you want to use your own infrastructure.
+- Basic familiarity with Azure resource concepts.
 
-## Installation
+You can also use the [Playground](https://cloudeval.ai/playground) without uploading files.
 
-### Step 1: Install Cloudeval
+## Your First Project
+
+### Step 1: Explore the Playground
+
+Open the [Playground](https://cloudeval.ai/playground) to see how diagrams, chat, and navigation work before connecting your own workflow.
+
+### Step 2: Create an Account
+
+Sign up at [cloudeval.ai](https://cloudeval.ai/signup), verify your email, and open the dashboard.
+
+### Step 3: Upload an ARM Template
+
+Create a new project, choose **Upload File**, and select your ARM template. Cloudeval parses the file, maps resources and dependencies, and generates an interactive diagram.
+
+### Step 4: Ask Your First Question
+
+Open AI chat and try:
+
+```text
+What resources are in this template?
+```
+
+Then narrow the answer:
+
+```text
+Show resources without tags
+```
+
+## Common Issues
+
+### Template Parsing Fails
+
+Validate the file locally before uploading:
 
 ```bash
-pip install Cloudeval
+az deployment group validate \
+  --resource-group my-rg \
+  --template-file template.json \
+  --parameters @parameters.json
 ```
 
-Or using conda:
+### Diagram Looks Empty
 
-```bash
-conda install -c conda-forge Cloudeval
-```
+Check that the template has a `resources` array and that linked templates were uploaded if the main template depends on them.
 
-### Step 2: Verify Installation
+### Diagram Is Hard to Read
 
-```bash
-cloudeval --version
-```
-
-You should see the version number displayed.
-
-## Your First Evaluation
-
-### Step 1: Configure Your Environment
-
-Create a configuration file `cloudeval.yml`:
-
-```yaml
-cloud_provider: azure
-subscription_id: your-subscription-id
-evaluation_rules:
-  - security
-  - cost-optimization
-  - reliability
-```
-
-### Step 2: Run Your First Evaluation
-
-```bash
-cloudeval evaluate --config Cloudeval.yml
-```
-
-### Step 3: Review Results
-
-The evaluation will generate a report showing:
-
-- Passed checks
-- Warnings
-- Failed checks with recommendations
-
-## Understanding the Results
-
-### Security Checks
-
-Security evaluations check for:
-
-- Publicly accessible resources
-- Missing encryption
-- Inadequate access controls
-- Compliance violations
-
-### Cost Optimization
-
-Cost checks identify:
-
-- Underutilized resources
-- Over-provisioned instances
-- Unused storage
-- Optimization opportunities
-
-### Reliability
-
-Reliability checks ensure:
-
-- High availability configurations
-- Backup and disaster recovery
-- Resource redundancy
-- SLA compliance
+Use filters, grouping, and saved views to focus on one service area or review concern at a time.
 
 ## Next Steps
 
-1. **Review Recommendations**: Address high-priority issues first
-2. **Set Up Regular Evaluations**: Schedule weekly or monthly evaluations
-3. **Customize Rules**: Configure custom rules for your organization
-4. **Integrate with CI/CD**: Add evaluations to your deployment pipeline
+1. **[Getting Started Guide](../getting-started/overview.md)** - Full onboarding flow.
+2. **[ARM Template Tutorial](../tutorials/arm-templates.md)** - Template-specific walkthrough.
+3. **[AI Chat Tutorial](../tutorials/ai-chat-basics.md)** - Better prompts and follow-ups.
+4. **[Contribution Guide](../contribute.md)** - Improve these docs.
 
-## Common Issues and Solutions
-
-### Issue: Permission Denied
-
-**Solution**: Ensure your service principal or user account has the `Reader` role at the subscription level.
-
-### Issue: No Resources Found
-
-**Solution**: Verify your subscription ID and that resources exist in the specified region.
-
-### Issue: Evaluation Timeout
-
-**Solution**: For large environments, use resource filtering or evaluate specific resource groups.
-
-## Conclusion
-
-You're now ready to start evaluating your cloud infrastructure with Cloudeval! For more advanced topics, check out our tutorials and guides.
-
-## Resources
-
-- [Getting Started Guide](../getting-started/overview.md)
-<!-- - [API Reference](../../reference.md) -->
-- [Contribution Guide](../contribute.md)
-
----
-
-Have questions? [Open an issue](https://github.com/ganakailabs/cloudeval/issues) or [start a discussion](https://github.com/ganakailabs/cloudeval/discussions)!
+Have questions? [Open an issue](https://github.com/ganakailabs/cloudeval/issues) or [contact support](../support.md).

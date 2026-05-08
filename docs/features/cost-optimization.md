@@ -1,7 +1,7 @@
 # Cost Optimization
 
 !!! warning "Coming Soon"
-    Advanced cost optimization with detailed analysis and AI-powered recommendations is coming in **Mid February 2026** as part of our "Deeper AI Understanding & Cloud Insight" release.
+    Advanced cost optimization with detailed analysis and AI-powered recommendations is listed on the roadmap as part of the "Deeper AI Understanding & Cloud Insight" release area.
 
     Currently, Cloudeval provides **interactive visualizations with cost overlays** as part of the core platform. For advanced cost optimization features, [view our roadmap](https://cloudeval.ai/home/roadmap).
 
@@ -286,7 +286,7 @@ Focus on:
 - **[Security Analysis](security-analysis.md)** - Review security issues
 - **[Export & Share](export.md)** - Share cost reports
 - **[Getting Started](../getting-started/overview.md)** - Learn the basics
-- **[Use Cases](../use-cases/)** - See real-world examples
+- **[Use Cases](../use-cases/index.md)** - See real-world examples
 
 ---
 

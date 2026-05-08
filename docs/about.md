@@ -4,14 +4,14 @@
 
 ## What is Cloudeval?
 
-Cloudeval is an AI-powered platform that automatically visualizes your Azure infrastructure from ARM templates, answers questions about your setup, and provides interactive visualizations with cost and security overlays. Built specifically for DevOps engineers, SREs, and cloud architects who work with Infrastructure as Code. (Bicep support coming Early Feb 2026 - [View roadmap](https://cloudeval.ai/home/roadmap))
+Cloudeval is an AI-powered platform that visualizes Azure infrastructure from ARM templates, answers questions about your setup, and provides interactive visualizations with cost and security overlays. It is built for DevOps engineers, SREs, and cloud architects who work with Infrastructure as Code. For Bicep and other upcoming format support, see the [roadmap](https://cloudeval.ai/home/roadmap).
 
 ## Who is Cloudeval For?
 
 ### DevOps Engineers
 
 - Visualize infrastructure changes before deployment
-- Review ARM templates and Bicep files visually
+- Review ARM templates visually
 - Document architecture for team onboarding
 - Troubleshoot issues with visual context
 
@@ -45,11 +45,11 @@ Upload and visualize your Infrastructure as Code:
 **Supported Formats:**
 
 - Azure ARM Templates (JSON) - Available now
-- Azure Bicep files - Coming Early Feb 2026 ([View roadmap](https://cloudeval.ai/home/roadmap))
+- Azure Bicep files - Planned ([View roadmap](https://cloudeval.ai/home/roadmap))
 - Modular templates (linked templates) - Available now
 - Parameter files - Available now
-- Terraform - Coming Early Feb 2026 ([View roadmap](https://cloudeval.ai/home/roadmap))
-- AWS CloudFormation - Coming Early Feb 2026 ([View roadmap](https://cloudeval.ai/home/roadmap))
+- Terraform - Planned ([View roadmap](https://cloudeval.ai/home/roadmap))
+- AWS CloudFormation - Planned ([View roadmap](https://cloudeval.ai/home/roadmap))
 
 **Features:**
 
@@ -85,7 +85,7 @@ Ask questions in natural language about your infrastructure code and get instant
 
 ### Web Editor for Infrastructure as Code
 
-Edit your ARM templates and Bicep files directly in the browser with syntax highlighting and validation.
+Edit ARM templates directly in the browser with syntax highlighting and validation. Bicep editor support is listed on the roadmap.
 
 **Features:**
 
@@ -99,7 +99,7 @@ Edit your ARM templates and Bicep files directly in the browser with syntax high
 **Supported Formats:**
 
 - ARM Templates (JSON)
-- Azure Bicep
+- Azure Bicep - planned
 - Parameter files
 - Linked templates
 
@@ -196,7 +196,7 @@ Ready to visualize your infrastructure?
 
 1. **[Try the Playground](https://cloudeval.ai/playground)** - Explore features
 2. **[Sign up for free](https://cloudeval.ai/signup)**
-3. **[Upload your ARM template or Bicep file](getting-started/overview.md)**
+3. **[Upload your ARM template](getting-started/overview.md)**
 
 ---
 

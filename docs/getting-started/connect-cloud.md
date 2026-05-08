@@ -1,15 +1,15 @@
 # Connect Your Cloud Provider
 
 !!! warning "Coming Soon"
-Direct cloud account connection is currently in development. For now, Cloudeval works with Infrastructure as Code files (ARM templates and Bicep).
+Direct cloud account connection is currently in development. For now, Cloudeval works with Infrastructure as Code files, starting with ARM templates.
 
-    Use the [Playground](https://cloudeval.ai/playground) to explore features, or upload your ARM/Bicep files to get started immediately.
+    Use the [Playground](https://cloudeval.ai/playground) to explore features, or upload an ARM template to get started immediately.
 
 ## Current Status
 
 Cloudeval currently supports:
 
-- **Infrastructure as Code** - Upload ARM templates and Bicep files
+- **Infrastructure as Code** - Upload ARM templates
 - **Web Editor** - Edit your IaC files directly in the browser
 - **AI Analysis** - Get insights about your infrastructure code
 - **Diagram Generation** - Visualize your infrastructure from code
@@ -74,15 +74,14 @@ az group export --name my-resource-group --output-file template.json
 **From Bicep:**
 
 ```bash
-# If you have Bicep files, use them directly
-# Or compile to ARM first
+# Compile Bicep to ARM before uploading
 az bicep build --file main.bicep
 ```
 
 ### Step 2: Upload to Cloudeval
 
 1. Create a new project
-2. Upload your ARM template or Bicep file
+2. Upload your ARM template
 3. Cloudeval generates the diagram
 4. Edit and analyze your infrastructure
 

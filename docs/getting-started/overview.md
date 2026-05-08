@@ -1,17 +1,15 @@
 # Getting Started with Cloudeval
 
-**From Sign-Up to Your First Diagram in 5 Minutes**
-
-This guide will walk you through setting up Cloudeval and generating your first infrastructure diagram from Azure ARM templates or Bicep files. By the end, you'll have a working visualization of your infrastructure.
+This guide walks you through setting up Cloudeval and generating your first infrastructure diagram from an Azure ARM template. By the end, you will have a working visualization you can inspect, edit, ask questions about, and export.
 
 ## Prerequisites
 
 Before you begin, make sure you have:
 
-- Azure ARM templates or Bicep files
+- Azure ARM template files
 - A modern web browser (Chrome, Firefox, Safari, or Edge)
 - Basic understanding of Azure infrastructure concepts
-- (Optional) Azure account for cloud import (Coming Soon)
+- Optional: Azure CLI if you want to validate templates locally before upload
 
 ## Step 1: Sign Up
 
@@ -46,30 +44,29 @@ The playground lets you:
 
 === "Infrastructure as Code (Recommended)"
 
-    ### Upload ARM Template or Bicep File
+    ### Upload ARM Template
 
     ![Infrastructure as Code](../assets/images/features/infra-as-code.png)
 
     1. Click **"Upload File"** or drag and drop
-    2. Select your ARM template (`.json`) or Bicep file (`.bicep`)
+    2. Select your ARM template (`.json`)
     3. Cloudeval automatically parses the file
     4. Resources are discovered and mapped
 
     **Supported Formats:**
     - Azure ARM Templates (JSON)
-    - Azure Bicep files
+    - Azure Bicep files - planned
     - Multiple files (for modular templates)
 
-    **Example:**
+    **Optional local validation:**
     ```bash
-    # Upload your template
-    az deployment group create \
+    az deployment group validate \
       --resource-group my-rg \
-      --template-file main.bicep \
+      --template-file template.json \
       --parameters @parameters.json
     ```
 
-    Then upload `main.bicep` to Cloudeval!
+    Then upload `template.json` to Cloudeval.
 
 === "Cloud Import (Coming Soon)"
 
@@ -92,7 +89,7 @@ The playground lets you:
 
 Once your project is created, Cloudeval will automatically:
 
-1. **Parse Infrastructure Code** - Analyze your ARM/Bicep templates
+1. **Parse Infrastructure Code** - Analyze your ARM templates
 2. **Map Resources** - Identify all Azure resources
 3. **Detect Relationships** - Find dependencies and connections
 4. **Generate Diagram** - Create an interactive visualization
@@ -143,7 +140,7 @@ Cloudeval includes a web-based editor for your Infrastructure as Code:
 </video>
 
 1. Click **"Code Editor"** tab
-2. View your ARM template or Bicep file
+2. View your ARM template
 3. Make edits with syntax highlighting
 4. See changes reflected in the diagram
 5. Export updated files
@@ -174,7 +171,7 @@ Cloudeval includes a web-based editor for your Infrastructure as Code:
 Now that you have the basics, explore these features:
 
 1. **[Work with ARM Templates](../tutorials/arm-templates.md)** - Deep dive into ARM template visualization
-2. **[Use Bicep Files](../tutorials/bicep-files.md)** - Visualize Bicep infrastructure
+2. **[Use Bicep Files](../tutorials/bicep-files.md)** - Review the planned Bicep workflow
 3. **[Customize Your Diagram](../tutorials/customize-diagrams.md)** - Adjust layouts and styling
 4. **[Export Your Diagram](../features/export.md)** - Share with your team
 5. **[Use AI Chat](../tutorials/ai-chat-basics.md)** - Master the AI assistant
@@ -184,11 +181,11 @@ Now that you have the basics, explore these features:
 
 ### Template Parsing Fails
 
-**Problem:** Can't parse ARM template or Bicep file
+**Problem:** Can't parse ARM template
 
 **Solutions:**
 
-- Verify file is valid JSON (for ARM) or valid Bicep syntax
+- Verify the file is valid JSON
 - Check for syntax errors
 - Ensure all required parameters are provided
 - Try validating with Azure CLI first:
@@ -223,9 +220,9 @@ Now that you have the basics, explore these features:
 - **[Documentation](../index.md)** - Browse all guides
 - **[Playground](https://cloudeval.ai/playground)** - Try features interactively
 - **[Community Discord](../community.md)** - Ask questions
-- **[Video Tutorials](../tutorials/)** - Watch walkthroughs
+- **[Tutorials](../tutorials/index.md)** - Step-by-step walkthroughs
 - **[Support Email](../support.md)** - Get direct help
 
 ---
 
-**Ready to dive deeper?** Check out our [tutorials](../tutorials/) or [feature guides](../features/)
+**Ready to dive deeper?** Check out our [tutorials](../tutorials/index.md) or [feature guides](../features/index.md)

@@ -2,7 +2,7 @@
 
 **Edit Your Infrastructure as Code Directly in the Browser**
 
-Cloudeval's built-in web editor lets you edit ARM templates and Bicep files directly in your browser with syntax highlighting, auto-completion, error detection, and real-time diagram updates.
+Cloudeval's built-in web editor lets you edit ARM templates directly in your browser with syntax highlighting, auto-completion, error detection, and real-time diagram updates. Bicep editor support is listed on the roadmap.
 
 ## Overview
 
@@ -23,7 +23,7 @@ The Web IaC Editor provides:
 Full syntax highlighting for:
 
 - **ARM Templates** - JSON syntax with ARM-specific highlighting (Available now)
-- **Bicep Files** - Bicep syntax with resource highlighting (Coming Early Feb 2026 - [View roadmap](https://cloudeval.ai/home/roadmap))
+- **Bicep Files** - Planned ([View roadmap](https://cloudeval.ai/home/roadmap))
 - **Parameter Files** - Parameter-specific syntax
 - **Linked Templates** - Template reference highlighting
 
@@ -108,7 +108,7 @@ Built-in formatting and validation:
 
 **Format Code:**
 - Auto-format JSON (ARM templates)
-- Format Bicep files
+- Format Bicep files when support is available
 - Indentation and spacing
 - Consistent style
 
@@ -295,4 +295,3 @@ Download updated files:
 ---
 
 **Need help?** [Contact support](../support.md) or [join our community](../community.md)
-

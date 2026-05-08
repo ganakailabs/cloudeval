@@ -292,7 +292,7 @@ infrastructure_validation:
 **Example:**
 ```bash
 curl -X POST https://api.cloudeval.ai/v1/analyze \
-  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Authorization: Bearer ${CLOUDEVAL_API_TOKEN}" \
   -H "Content-Type: application/json" \
   -d '{
     "template": "...",

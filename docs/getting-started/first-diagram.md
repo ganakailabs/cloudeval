@@ -1,189 +1,108 @@
 # Generate Your First Diagram
 
-**Automatically Visualize Your Cloud Infrastructure**
+This guide shows the fastest current path to a useful Cloudeval diagram: upload an Infrastructure as Code file, wait for Cloudeval to parse it, then inspect the generated resources and relationships.
 
-Once you've connected your cloud provider, generating your first diagram is just a few clicks away.
+## Before You Start
+
+You need:
+
+- A Cloudeval account, or access to the [Playground](https://cloudeval.ai/playground)
+- An Azure ARM template (`.json`)
+- Optional parameter or linked template files if your deployment uses them
+
+!!! warning "Direct cloud import is coming soon"
+    Direct Azure and AWS cloud import is documented as a roadmap feature elsewhere in these docs. Use ARM template uploads for the current workflow.
 
 ## Quick Start
 
-1. **Create a Project**
-
-   - Click **"New Project"** in the dashboard
-   - Name your project (e.g., "Production AWS")
-   - Select your cloud connection
-
-2. **Configure Resource Filters** (Optional)
-
-   - Choose specific regions
-   - Filter by resource types
-   - Include/exclude by tags
-
-3. **Generate Diagram**
-   - Click **"Generate Diagram"**
-   - Wait 30 seconds to 2 minutes
-   - Your diagram appears automatically!
-
-## Understanding the Diagram
-
-### Diagram Components
-
-**Nodes (Resources)**
-
-- Each cloud resource appears as a node
-- Color-coded by resource type
-- Size indicates resource importance
-
-**Edges (Connections)**
-
-- Lines show relationships between resources
-- Dependencies and data flows
-- Network connections
-
-**Groups (Logical Organization)**
-
-- Resources grouped by:
-  - Resource groups (Azure)
-  - VPCs (AWS)
-  - Projects (GCP)
-  - Custom groupings
-
-### Navigation
-
-- **Pan:** Click and drag the canvas
-- **Zoom:** Mouse wheel or pinch gesture
-- **Fit to Screen:** Double-click canvas
-- **Select:** Click on any resource
-- **Search:** Use search bar (Ctrl+K)
-
-## Customizing Your Diagram
-
-### Layout Options
-
-**Automatic Layout (Default)**
-
-- AI-powered intelligent positioning
-- Best for most use cases
-- Automatically updates
-
-**Manual Layout**
-
-- Drag nodes to reposition
-- Customize spacing
-- Save your layout
-
-**Hierarchical Layout**
-
-- Top-down organization
-- Shows dependencies clearly
-- Good for documentation
-
-### Styling
-
-**Color Schemes**
-
-- Default (provider colors)
-- Security-focused (red/yellow/green)
-- Cost-focused (by spending)
-- Custom themes
-
-**Node Sizing**
-
-- Uniform size
-- By resource importance
-- By cost
-- By usage
+1. Click **New Project** in the dashboard.
+2. Enter a project name, such as `Production infrastructure`.
+3. Choose **Upload File**.
+4. Select your ARM template and any linked files.
+5. Click **Create Project**.
+6. Wait for Cloudeval to parse the template and generate the diagram.
 
 ## What Happens During Generation
 
-1. **Resource Discovery** (10-30 seconds)
+Cloudeval turns the uploaded template into a diagram in four stages:
 
-   - Scans your cloud account
-   - Discovers all resources
-   - Collects metadata
+1. **Parse the template** - Reads JSON, parameters, variables, linked templates, and outputs.
+2. **Discover resources** - Identifies Azure resource definitions.
+3. **Map relationships** - Detects dependencies, references, and connections.
+4. **Render the diagram** - Lays out resources so you can inspect and navigate them.
 
-2. **Relationship Mapping** (10-20 seconds)
+Generation time depends on template size and dependency complexity. Small templates usually complete faster than large, modular deployments.
 
-   - Identifies connections
-   - Maps dependencies
-   - Detects network flows
+## Explore the Diagram
 
-3. **Layout Generation** (10-30 seconds)
+### Navigate
 
-   - AI calculates optimal positions
-   - Groups related resources
-   - Optimizes for readability
+- **Pan:** Click and drag the canvas.
+- **Zoom:** Use the mouse wheel or pinch gesture.
+- **Fit to screen:** Double-click the canvas.
+- **Select:** Click a resource to open details.
+- **Search:** Use `Ctrl+K` or `Cmd+K` to find resources.
 
-4. **Rendering** (5-10 seconds)
-   - Draws nodes and edges
-   - Applies styling
-   - Finalizes diagram
+### Inspect Resources
 
-**Total Time:** 30 seconds to 2 minutes (depending on infrastructure size)
+Click any resource node to review:
 
-## Tips for Best Results
+- Resource type and API version
+- Properties from the template
+- Parameters and variables used by the resource
+- Direct dependencies and dependents
+- Outputs, if the template defines them
 
-### For Large Environments
+### Reduce Clutter
 
-- **Use Filters:** Start with specific regions or resource types
-- **Focus Areas:** Generate separate diagrams for different areas
-- **Incremental:** Add resources gradually
+For larger templates:
 
-### For Complex Architectures
+- Filter by resource type or area.
+- Group related resources.
+- Collapse groups when you only need the high-level view.
+- Create multiple focused views instead of one overloaded diagram.
 
-- **Enable Grouping:** Use logical groupings
-- **Hide Details:** Collapse groups to see overview
-- **Layers:** Use different views for different concerns
+## Customize the View
 
-### For Documentation
+Use the layout and styling controls when the default diagram is too dense or when you are preparing a diagram for review:
 
-- **Clean Layout:** Use automatic layout for consistency
-- **Labels:** Ensure resource names are visible
-- **Legend:** Add custom legends for clarity
+- **Automatic layout:** Best first view for most templates.
+- **Manual layout:** Drag nodes into a presentation-ready arrangement.
+- **Hierarchical layout:** Show dependency direction more clearly.
+- **Security or cost overlays:** Highlight specific review concerns when available.
 
 ## Common Issues
 
 ### Empty Diagram
 
-**Problem:** Diagram shows no resources
+If the diagram shows no resources:
 
-**Solutions:**
-
-- Verify you have resources in the selected region
-- Check resource filters aren't too restrictive
-- Ensure IAM permissions are sufficient
-- Try refreshing the connection
-
-### Slow Generation
-
-**Problem:** Diagram takes too long
-
-**Solutions:**
-
-- Use resource filters to limit scope
-- Start with a specific region
-- Check cloud provider API status
-- Contact support for optimization
+- Confirm the template has a `resources` array.
+- Validate the JSON before uploading.
+- Upload linked templates if the main template references them.
+- Check that filters are not hiding resources.
 
 ### Missing Resources
 
-**Problem:** Some resources don't appear
+If only some resources appear:
 
-**Solutions:**
+- Confirm conditional resources are included for the selected parameters.
+- Check linked template paths.
+- Make sure resource definitions are complete.
+- Re-upload the latest files if you edited locally.
 
-- Check resource filters
-- Verify IAM permissions include those resource types
-- Some resources may be in different regions
-- Refresh the connection
+### Slow Generation
+
+If generation takes longer than expected:
+
+- Break very large deployments into smaller modules.
+- Start with one resource group or service area.
+- Remove unused linked templates.
+- Contact support if a production-scale template consistently times out.
 
 ## Next Steps
 
-Now that you have your first diagram:
-
-1. **[Explore the AI Chat](../tutorials/ai-chat-basics.md)** - Ask questions about your infrastructure
-2. **[Customize the Layout](../tutorials/customize-diagrams.md)** - Make it your own
-3. **[Export the Diagram](../features/export.md)** - Share with your team
-4. **[Add Team Members](../features/collaboration.md)** - Collaborate on diagrams
-
----
-
-**Ready for more?** Check out our [tutorials](../tutorials/) or [feature guides](../features/)
+1. **[Use AI Chat](../tutorials/ai-chat-basics.md)** - Ask questions about the generated diagram.
+2. **[Customize the Layout](../tutorials/customize-diagrams.md)** - Prepare a cleaner review view.
+3. **[Export the Diagram](../features/export.md)** - Share with your team.
+4. **[Collaborate on Diagrams](../features/collaboration.md)** - Invite teammates.

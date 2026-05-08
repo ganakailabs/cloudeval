@@ -1,8 +1,6 @@
 # Features
 
-**Explore All Cloudeval Capabilities**
-
-Discover the powerful features that make Cloudeval the best tool for infrastructure visualization and analysis.
+Use this page to choose the Cloudeval feature guide that matches what you are trying to do: generate diagrams, edit Infrastructure as Code, collaborate with teammates, export diagrams, or review upcoming capabilities.
 
 ## Core Features
 
@@ -48,10 +46,10 @@ Edit Infrastructure as Code directly in your browser:
 
 ### Cloud Import
 
-Import infrastructure directly from cloud providers (Coming Soon):
+Import infrastructure directly from cloud providers (planned):
 
-- Azure Cloud Sync (March 2026)
-- AWS Cloud Sync (Early July 2026)
+- Azure Cloud Sync
+- AWS Cloud Sync
 - Automatic resource discovery
 - Real-time synchronization
 
@@ -79,29 +77,27 @@ Identify cost-saving opportunities:
 
 **[View Cost Features →](cost-optimization.md)**
 
-## All Features
+## Feature Checklist
 
-- ✅ **Automated Diagram Generation** - From Infrastructure as Code
-- ✅ **AI-Powered Chat** - Ask questions about your infrastructure
-- ✅ **Interactive Visualizations** - Pan, zoom, explore
-- ✅ **Web-Based Editor** - Edit IaC files in browser
-- ✅ **Export & Share** - Multiple formats and sharing options
-- ✅ **Real-Time Collaboration** - Work with your team
-- ✅ **Version History** - Track changes over time
-- ✅ **Customization** - Layouts, colors, annotations
-- ✅ **Security Analysis** - Best practices and compliance
-- ✅ **Cost Optimization** - Identify savings opportunities
+- **Automated diagram generation** - Generate diagrams from Infrastructure as Code.
+- **AI-powered chat** - Ask questions about your infrastructure.
+- **Interactive visualizations** - Pan, zoom, search, and inspect resources.
+- **Web-based editor** - Edit IaC files in the browser.
+- **Export and share** - Use multiple formats and sharing options.
+- **Real-time collaboration** - Work with your team.
+- **Version history** - Track changes over time.
+- **Customization** - Adjust layouts, colors, annotations, and filters.
+- **Security analysis** - Review security posture and best practices.
+- **Cost optimization** - Identify cost review opportunities.
 
 ## Get Started
 
 Ready to explore these features?
 
-1. **[Getting Started](../../getting-started/)** - Set up your account
-2. **[Tutorials](../../tutorials/)** - Learn step-by-step
+1. **[Getting Started](../getting-started/index.md)** - Set up your account
+2. **[Tutorials](../tutorials/index.md)** - Learn step-by-step
 3. **[Try Playground](https://cloudeval.ai/playground)** - Explore interactively
 
 ---
 
-**Questions?** [Contact support](../../support.md) or [view FAQ](../../faq.md)
-
-
+**Questions?** [Contact support](../support.md) or [view FAQ](../faq.md)
