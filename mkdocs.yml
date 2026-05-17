@@ -33,7 +33,7 @@ theme:
         icon: material/brightness-4
         name: Switch to dark mode
   logo: assets/logo.png
-  favicon: assets/logo.png
+  favicon: assets/favicon.png
   icon:
     repo: fontawesome/brands/github
   features:
