@@ -210,6 +210,30 @@ The CLI provides a rich terminal UI:
 - **Scrollable history:** Navigate through long conversations
 - **Keyboard shortcuts:** Efficient navigation and control
 
+![Cloudeval CLI chat workspace](../assets/images/cli/tui-chat.png)
+
+### Terminal Workspace Tabs
+
+The terminal workspace includes quick tabs for project status, reports, projects, connections, billing, options, and help. Use number keys to jump between tabs, `R` to refresh, and `O` to open related content in the web app.
+
+#### Overview
+
+Use the Overview tab to check account status, active project context, recent validation activity, and the most important operational signals before starting a chat or report workflow.
+
+![Cloudeval CLI overview tab](../assets/images/cli/overview.png)
+
+#### Reports
+
+Use the Reports tab to inspect generated evaluations, review report status, and download artifacts without leaving the terminal.
+
+![Cloudeval CLI reports tab](../assets/images/cli/reports.png)
+
+#### Billing
+
+Use the Billing tab to see plan, credit, and usage information from the same CLI workspace used for chat and automation.
+
+![Cloudeval CLI billing tab](../assets/images/cli/billing.png)
+
 ### Keyboard Shortcuts
 
 **Scrolling:**
