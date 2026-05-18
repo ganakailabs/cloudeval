@@ -6,10 +6,16 @@ The Cloudeval CLI lets you authenticate, select a project, and ask Eva questions
 
 ### Installation
 
-**One-line install (recommended):**
+**npm install (Node.js 20+):**
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/ganakailabs/cloudeval-cli/main/scripts/install.sh | bash
+npm install -g @ganakailabs/cloudeval-cli
+```
+
+**Standalone release binary:**
+
+```bash
+curl -fsSL https://cli.cloudeval.ai/install.sh | bash
 ```
 
 This installs the `cloudeval` command globally.
@@ -402,7 +408,7 @@ jobs:
       
       - name: Install Cloudeval CLI
         run: |
-          curl -fsSL https://raw.githubusercontent.com/ganakailabs/cloudeval-cli/main/scripts/install.sh | bash
+          npm install -g @ganakailabs/cloudeval-cli
       
       - name: Ask Question (Non-Interactive)
         run: |
